@@ -1,0 +1,74 @@
+* {
+    background-color: black;
+}
+
+@keyframes cambioDeColor {
+    0% {
+        color: #ff0000;
+    }
+    10% {
+        color: #00ff00;
+    }
+    20% {
+        color: #0000ff;
+    }
+    35% {
+        color: #ff00ff;
+    }
+    40% {
+        color: #e5ff00;
+    }
+    50% {
+        color: #ff9100;
+    }
+    60% {
+        color: #0d00ff;
+    }
+    70% {
+        color: #00ffd5;
+    }
+    80% {
+        color: #ff00b3;
+    }
+    90% {
+        color: #00d9ff;
+    }
+    100% {
+        color: #13cb76;
+    }
+}
+
+h1 {
+    font-size: 3.5rem;
+    animation: cambioDeColor 5s infinite;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000000;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #ffffff;
+}
